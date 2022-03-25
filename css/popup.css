@@ -1,0 +1,3 @@
+h1 {color: #fc0;}
+.popup{position: absolute;top: 50%;left: 50%;transform:translate(-50% , -50%);}
+.popup button{position: absolute;top:11%;right:11%;opacity:0;cursor: pointer;width: 50px;height: 50px;}
