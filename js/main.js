@@ -6,7 +6,9 @@ $(function(){
     function topbannerHandler () {
         $('.topBanner').slideUp();
     }
-    /////////////////////////////////////////
+    //////////////////////////////////////////////////////////
+
+    ////////***각각의 슬라이드에 애니메이션.../////////////////
 
     $('.mainVisualSlide').on('init reInit afterChange',function(){
         let current =  $('.slick-current');
@@ -33,7 +35,12 @@ $('.mainVisualSlide').slick({
 //
 
 
-
+$('.movieBtn i:first-child').on('click',function(){
+    $('#admovie').trigger('play');
+})
+$('.movieBtn i:last-child').on('click',function(){
+    $('#admovie').trigger('pause');
+})
 
 
 
