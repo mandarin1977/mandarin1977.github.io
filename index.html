@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAFF</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<!--전체-->
+    <div class="wrap">
+    
+        <!--topbanner 2022.03.17-->
+        <div class="topBanner">
+            <div class="container">
+                <h2>
+                    JEWELLERY COLLECTION EVENT
+                </h2>
+                <p>
+                    모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.
+                    <a href="#!">MORE</a>
+                </p>
+                <i class="xi-close"></i>
+            </div>
+        </div>
+    <!--topbanner 2022.03.17-->
+    
+    <!--헤더-->
+        <header id="headerWr">
+            <div class="container">
+                <h1>
+                    <a href="#!">
+                        <img src="./img/grafflogo.png" alt="GRAFF">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">하이주얼리</a></li>
+                        <li><a href="#!">주얼리 컬렉션</a></li>
+                        <li><a href="#!">컬렉션 & 브라이덜</a></li>
+                        <li><a href="#!">웨딩주얼리</a></li>
+                        <li><a href="#!">특별한 솔리테어</a></li>
+                    </ul>
+                </nav>
+                <form name="searchForm" action="javascript:searchResurt()" id="searchFrom">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button>
+                        <i class="xi-search"></i>
+                    </button>
+                </form>
+                <script>
+                    const searchInput = document.querySelector('#searchFrom input');
+                    const searchResurt = () => {
+                        if(searchInput.value.length < 3) {
+                            alert('3글자 이상 입력해주세요');
+                            searchInput.value = ''
+                            searchInput.focus();
+                        }
+                    }
+                </script>
+            </div>
+        </header>
+    <!--헤더 끝-->
+    
+    <!--메인 슬라이더-->
+        <div id="mainSlider">
+            <section class="mainVisual">
+                <div class="mainVisualSlide">
+                    <figure class="itm01">
+                        <div class="slogan">
+                            <h2>
+                             JEWELLERY COLLECTION EVENT
+                            </h2>
+                            <p>
+                                모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.
+
+                            </p>
+                            <a href="#!">more<i class="xi-arrow-right"></i></a>
+                        </div>
+                    </figure>
+                    <figure class="itm02">
+                        <div class="slogan">
+                            <h2>
+                            JEWELLERY COLLECTION EVENT
+                            </h2>
+                            <p>
+                                모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.
+
+                            </p>
+                            <a href="#!">more<i class="xi-arrow-right"></i></a>
+                        </div>
+                    </figure>
+                    <figure class="itm03">
+                        <div class="slogan">
+                            <h2>
+                            JEWELLERY COLLECTION EVENT
+                            </h2>
+                            <p>
+                                모던하면서도 클래식한 디자인들을 완벽하게 표현한 그라프 하우스의 시그너쳐 컬렉션은 다양한 컷, 스톤 그리고 색상들을 멋진 조합으로 선사합니다.
+
+                            </p>
+                            <a href="#!">more<i class="xi-arrow-right"></i></a>
+                        </div>
+                    </figure>
+                </div>
+            </section>
+        </div>
+    <!--메인 슬라이더 끝-->
+
+    <!--메인-->
+        <main id="mainWr">
+
+        </main>
+    <!--메인 끝-->
+    
+    <!--푸터-->
+        <footer id="footerWr">
+
+        </footer>
+    <!--푸터 끝-->
+    
+    </div>
+<!--전체끝-->
+</body>
+
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script src="./js/main.js"></script>
+
+</html>
