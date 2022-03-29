@@ -20,9 +20,12 @@ $(function(){
 $('.mainVisualSlide').slick({
     autoplay: true,
     autoplaySpeed: 3000,
-    arrows :false,
+    arrows :true,
     pauseOnHover:false,
     pauseOnFocus:false,
+    prevArrow: '<i class="xi-arrow-left sleft"></i>',
+    nextArrow: '<i class="xi-arrow-right sright"></i>',
+    dots:true,
 });
 
 //$('.mainVisualSlide figure').eq(1).addClass('on');
@@ -42,8 +45,19 @@ $('.movieBtn i:last-child').on('click',function(){
     $('#admovie').trigger('pause');
 })
 
+$('.slideArrow i:first-child').on('click', function(){
+    $('.mainVisualSlide').slick('slickPrev')
+    
+});
+$('.slideArrow i:first-child').on('click', function(){
+    $('.mainVisualSlide').slick('slickNext')
+    
+});
 
-
-
+$('.mainVisualLink li').on('click', function(){
+    let idx = $(this).index();
+    $('.mainVisualSlide').slick('slickGoTo', idx);
 })
 
+
+});
