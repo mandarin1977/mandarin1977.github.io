@@ -115,7 +115,10 @@ padding: 24px 0;
 #mainSlider{
     color: #004744;
 
+
 }
+
+.mainVisualSlide{position: re;}
 
 .mainVisual .mainVisualSlide figure{
     position: relative;
@@ -133,17 +136,66 @@ padding: 24px 0;
     background: url(../img/mainvisual03.jpg) no-repeat center center/cover;
 }
 
-.slick-arrow{position: absolute;
-            top: 30%;
-            z-index: 1;
-}
-
 
 .mainVisualSlide .slogan{
     position: absolute;
     inset: 50% auto auto 50%;
     transform: translate(-50%,-50%);
     padding: 0 15px;
+}
+
+.mainVisual .mainVisualSlide>i[class*="xi"]{
+    color: #fff;
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+
+    padding: 20px;
+    font-size: 50px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 50%;
+
+}
+
+.slick-dots{
+    position: absolute;
+    display: flex;
+    left: 50%;
+    bottom: 5%;
+    transform: translate(-50%, -50%);
+    gap: 10px;
+
+}
+.slick-dots li button{
+    color: transparent;
+    background: transparent;
+    border: none;
+    width: 100px;
+    height: 5px;
+    
+}
+.slick-dots li.slick-active::after{
+    width: 100%;
+}
+
+.slick-dots li::after{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 100%;
+    background: #f00;
+    transition: 1s;
+}
+.slick-dots li.slick-actve{
+    background: #f00;
+}
+
+.mainVisual .mainVisualSlide .sleft{
+    margin-left: -600px;
+}
+.mainVisual .mainVisualSlide .sright{
+    margin-left: 600px;
 }
 
 .mainVisual .mainVisualSlide figure h2{
@@ -211,6 +263,33 @@ padding: 24px 0;
 .mainVisual .mainVisualSlide figure i{
     vertical-align: middle;
 }
+
+.mainVisual .mainVisualLink{
+    position: absolute;
+    inset: auto auto auto 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1200px;
+    padding: 0 15px;
+    display: flex;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+}
+
+.mainVisual .mainVisualLink li{
+    flex: 1;
+    background: #f00;
+}
+
+.mainVisual .mainVisualLink li~li{
+    border-left: 1px solid #fff;
+}
+.mainVisual .mainVisualLink i{
+    padding: 5px;
+    background: rgba(0,0,0,0.5);
+}
+
 
 /*여기서 부터*/
 #mainWr{
